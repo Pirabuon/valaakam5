@@ -1,0 +1,367 @@
+html {
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;700&family=Kavivanar&display=swap");
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-family: "Baloo Thambi 2", cursive;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+a:active,
+a:hover {
+  color: inherit;
+}
+
+code {
+  border: 1px solid #000000;
+}
+
+.page-container {
+  padding: 5rem 0 4rem 0;
+}
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.page-container.postSingle h1 {
+  text-align: left;
+}
+.title {
+  text-align: center;
+}
+
+.posts-list {
+  display: block;
+}
+
+.post-card {
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  padding: 1rem;
+  border-radius: 5px;
+}
+iframe {
+  width: 100%;
+}
+button.btnA {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin: auto;
+  border-radius: 5px;
+  width: 60%;
+  margin-left: 20%;
+  border: 0px solid #25af89 !important;
+  box-shadow: 0 0 0px rgb(0 0 0 / 10%);
+  background: linear-gradient(
+    -45deg,
+    #25af89,
+    #098864,
+    #25af89,
+    #32c97d
+  ) !important;
+  background-size: 400% 400% !important;
+  transition: all 0.5s;
+}
+button.btnA:hover {
+  letter-spacing: 3px;
+}
+.post-card img {
+  height: 180px;
+  width: 87.5vw;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+p.post-meta {
+  font-size: 0.8rem;
+  background: #f1f1f1;
+  width: fit-content;
+  padding: 0.25rem 1rem;
+  border-radius: 50px;
+}
+.Placeholder .image {
+  height: 180px;
+  width: 87.5vw;
+  border-radius: 10px;
+  object-fit: cover;
+  background: #f1f1f1;
+  margin-bottom: 0.75rem;
+  background: linear-gradient(-45deg, #f4f4f4f4, #f1f1f1, #c9c9c9c9, #f1f1f1);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
+.Placeholder h3 {
+  height: 25px;
+  border-radius: 50px;
+  width: 87.5vw;
+  background: #f1f1f1;
+  background: linear-gradient(-45deg, #f4f4f4f4, #f1f1f1, #c9c9c9c9, #f1f1f1);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
+
+.Placeholder .metadata {
+  height: 20px;
+  border-radius: 50px;
+  width: 35vw;
+  background: #f1f1f1;
+  background: linear-gradient(-45deg, #f4f4f4f4, #f1f1f1, #c9c9c9c9, #f1f1f1);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+  margin-left: 0rem;
+}
+
+.Placeholder.single h3:last-child {
+  width: 70vw;
+}
+
+.Placeholder.single .metadata {
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.Placeholder.single .cont p {
+  height: 14px;
+  border-radius: 50px;
+  width: 80vw;
+  background: #f1f1f1;
+  background: linear-gradient(-45deg, #f4f4f4f4, #f1f1f1, #c9c9c9c9, #f1f1f1);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
+.Placeholder.single .cont p:last-child {
+  width: 50vw;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.postSingle {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.post-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-card h3 {
+  font-size: 1.2rem;
+  margin: 0 0 20px;
+  word-wrap: break-word;
+  font-weight: 500;
+}
+
+.post-card p {
+  margin: 0;
+  padding: 0;
+}
+
+.post-card p + p {
+  margin-top: 0.25rem;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.post-content img {
+  height: auto;
+  max-width: 100%;
+  border-radius: 10px;
+}
+.categories-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.metadata {
+  z-index: 99;
+  background: #f1f1f1;
+  width: fit-content;
+  padding: 0.5rem 1.5rem;
+  border-radius: 500px;
+  transform: scale(0.9);
+  margin: -1rem 0 0 -0.75rem;
+}
+.metadata p {
+  font-size: 0.8rem;
+  font-weight: 300 !important;
+}
+.metadata p span {
+  font-size: 0.6rem;
+}
+nav.navbar {
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  padding-bottom: 0.5rem;
+  background: white;
+  box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+}
+nav.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  margin-right: 1rem;
+}
+nav.navbar ul li {
+  padding: 0.25rem 1rem;
+  background: #f5f5f5;
+  border-radius: 5px;
+}
+nav.navbar ul li a {
+  text-decoration: none;
+}
+.logo {
+  max-height: 25px;
+  float: left;
+  position: absolute;
+  left: 5rem;
+}
+ul.menu {
+  position: relative;
+  z-index: 8;
+}
+.hider {
+  height: 100vh;
+  width: 100%;
+  background: #ffffff;
+  position: fixed;
+  top: 0;
+  z-index: 7;
+  opacity: 0.01;
+}
+.swiper {
+  margin-left: -2rem;
+}
+.swiper-slide {
+  background: #f5f5f5;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 50px;
+}
+.swiper-slide a {
+  padding: 0.5rem 1rem;
+  height: 25px;
+  text-decoration: none;
+}
+button {
+  border: 0 !important;
+  background: none !important;
+}
+
+li.hsShare {
+  padding: 0.25rem 0rem !important;
+  margin-top: 0px;
+  margin-bottom: -15px;
+  background: none !important;
+}
+.mobile-nav button {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  z-index: 11;
+  border: 0;
+  background: none;
+}
+.mobile-nav button img {
+  height: 30px;
+}
+.mobile-nav ul {
+  display: block !important;
+  height: 100vh;
+  justify-content: unset !important;
+  background: #ffffff;
+  width: 300px;
+  float: left;
+  padding: 4rem 1rem;
+  margin: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  box-shadow: 0 0 50px rgb(0 0 0 / 10%);
+}
+.mobile-nav ul li {
+  background: none !important;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.mobile-nav.animate {
+  animation: navAnimation 0.5s ease-in-out;
+}
+@keyframes navAnimation {
+  0% {
+    left: -300px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.shareIcon img {
+  height: 25px;
+}
+nav.NavFooter {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  background: none;
+  padding: 0.5rem;
+  box-shadow: 0 0 0px rgb(0 0 0 / 20%);
+}
+
+.backBtn button {
+  background: white !important;
+  padding: 0.5rem 1rem;
+  border-radius: 500px;
+  box-shadow: 0 0 50px rgb(0 0 0 / 30%);
+}
+@media (min-width: 768.98px) {
+  .posts-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .post-card {
+    width: 29% !important;
+  }
+  .post-card img {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .posts-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .post-card {
+    width: 24% !important;
+  }
+  .post-card img {
+    width: 100% !important;
+  }
+}
